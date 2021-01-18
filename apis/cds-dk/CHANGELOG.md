@@ -6,6 +6,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## Version 3.3.4 - 2021-01-12
+
+### Changed
+
+- Bump versions of `@sap/cds` and `axios`
+
 ## Version 3.3.3 - 2020-12-18
 
 ### Changed

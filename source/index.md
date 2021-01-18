@@ -33,10 +33,4 @@ Package | Description
 
 ## SAP Cloud SDK for JavaScript
 ![SAP Cloud SDK Logo](./assets/brands/sap-cloud-sdk-for-javascript.svg){:style="float:right;width:7rem;margin-left:1rem"}
-The [SAP Cloud SDK](https://sap.github.io/cloud-sdk/) is a one-stop shop for developing and extending SAP applications in a Cloud and is als available as [SAP Cloud SDK for JavaScript](https://sap.github.io/cloud-sdk/docs/js/getting-started/). 
-
-Package | Description
-------- | -----------
-[cloud-sdk-core](apis/cloud-sdk-core/README.md) | This package contains the core functionality for the Virtual Data Model (VDM) as well as the Cloud Platform abstractions.
-[cloud-sdk-generator](apis/cloud-sdk-generator/README.md) | Generate your own service module using a service specification (.edmx file).
-cloud-sdk-vdm-xxx | Prebuild OData Virtual Data Models (VDM) for SAP S/4HANA Cloud.
+The [SAP Cloud SDK](https://sap.github.io/cloud-sdk/) is a one-stop shop for developing and extending SAP applications in a Cloud and is als available as [SAP Cloud SDK for JavaScript](https://sap.github.io/cloud-sdk/docs/js/getting-started/).

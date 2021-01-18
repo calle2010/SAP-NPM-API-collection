@@ -4,7 +4,18 @@
 - The format is based on [Keep a Changelog](http://keepachangelog.com/).
 - This project adheres to [Semantic Versioning](http://semver.org/).
 
-## Version 4.4.7 - 2012-12-18
+## Version 4.4.9 - 2021-01-12
+
+### Fixed
+- `cds build` for SAP HANA no longer fails sporadically with `ENOENT` when writing CSV files.
+
+## Version 4.4.8 - 2021-01-07
+
+### Fixed
+
+- Add missing setter for `user.locale`
+
+## Version 4.4.7 - 2020-12-18
 
 ### Fixed
 
