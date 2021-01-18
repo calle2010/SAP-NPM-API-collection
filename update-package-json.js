@@ -36,7 +36,7 @@ const fs = require('fs');
     packageJson.dependencies = ordered
     fs.writeFile("new-" + packageDotJson, JSON.stringify(packageJson), function(err){
       if (err) throw err
-      console.log('The dependencies where updated')
+      console.log('The dependencies were updated')
     })
     fs.writeFile("packages.txt", packagesTxt, function(err){
       if (err) throw err
