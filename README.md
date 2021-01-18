@@ -13,11 +13,10 @@ You could also find 3 other packages in the node_modules, downloaded as dependen
 
 ### install MKDocs and dependencies
 ```
-pip install mkdocs
-pip install mkdocs-material
-pip install codehilite
-pip install mkdocs-minify-plugin
-pip install mkdocs-awesome-pages-plugin
+sudo pip3 install mkdocs
+sudo pip3 install mkdocs-material
+sudo pip3 install mkdocs-minify-plugin
+sudo pip3 install mkdocs-awesome-pages-plugin
 ```
 
 <!--
