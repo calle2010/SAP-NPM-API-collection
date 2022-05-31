@@ -1,5 +1,5 @@
-#/bin/sh
-set -e
+#!/bin/sh
+set -eu
 
 npm config rm @sap:registry
 rm -rf node_modules
@@ -24,16 +24,16 @@ echo "updating $(wc -l packages.txt)"
 
 xargs -P 5 -n 1 -I{} sh -c './npm_download.sh {}' <packages.txt
 
-while read package; do
-  packageNoPrefix=`echo $package | sed 's/@sap//g'`
+while read -r package; do
+  packageNoPrefix=$(echo "$package" | sed 's/@sap//g')
   mkdir -p "apis$packageNoPrefix"
   rsync -zarv  --include "*/" --include="*.md" --exclude="*" "node_modules/$package/" "apis$packageNoPrefix"
-  cp node_modules/$package/LICENS* apis$packageNoPrefix
-  if [ -d ./node_modules/$package/doc ]; then
-    cp -r ./node_modules/$package/doc apis$packageNoPrefix/
+  cp "node_modules/$package/LICENS*" "apis$packageNoPrefix"
+  if [ -d "./node_modules/$package/doc" ]; then
+    cp -r "./node_modules/$package/doc" "apis$packageNoPrefix/"
   fi
-  if [ -d ./node_modules/$package/docs ]; then
-    cp -r ./node_modules/$package/docs apis$packageNoPrefix/
+  if [ -d "./node_modules/$package/docs" ]; then
+    cp -r "./node_modules/$package/docs" "apis$packageNoPrefix/"
   fi  
 done <packages.txt
 echo "now execute 'mkdocs build -f mkdocs.yml'"
